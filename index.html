@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/all.min.css">
+      <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <link rel="stylesheet" href="./css/main.css">
+      <title>Yummy</title>
+    </head>
+    <body>
+
+      <!-- sidebar -->
+
+      <section class="sidebar position-fixed top-0 h-100 d-flex z-3">
+        <div class="sidenav d-flex flex-column justify-content-between bg-black text-white h-100 py-4 ps-3 col-12 w-75">
+          <div class="links">
+            <ul class=" list-unstyled overflow-hidden px-2">
+                <li  class=" animate__animated animate__fadeOutDown" data-category="s" >Search</li>
+                <li  class="py-2 animate__animated animate__fadeOutDown" data-category="c" >Categories</li>
+                <li  class="py-2 animate__animated animate__fadeOutDown" data-category="a">Area</li>
+                <li  class="py-2 animate__animated animate__fadeOutDown" data-category="i">Ingredients</li>
+                <li  class="py-2 animate__animated animate__fadeOutDown" data-category="u">Contact Us</li>
+            </ul>
+          </div>
+          <div class="nav-footer">
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="footer">
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" d-flex flex-column h-100 justify-content-between py-4 text-center px-2 bg-white text-black" >
+          
+          <img class="logo" src="./img/logo.png">
+          <i id="icon" class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+          
+          <div>
+              <i  class="fa-solid fa-globe d-block"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        
+        </div>
+      </section>
+
+
+      <!-- card -->
+
+      <section class="meal">
+        <div class="container position-relative">
+          <div class="row my-5 g-4 " id="mealsData">
+          </div>
+
+          <div class="loading  d-none">
+            <span class="loader"></span>
+          </div>
+        </div>
+      </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/main.js"></script>
+    </body>
+</html>
+
+
